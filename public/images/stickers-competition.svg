@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Ambient Glow -->
+    <radialGradient id="compBgGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#0b1730" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#040711" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Glossy Sticker Highlight Overlay -->
+    <linearGradient id="stickerGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.15" />
+    </linearGradient>
+
+    <!-- Card Header Gradient -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="600" fill="#060913" />
+  <circle cx="300" cy="300" r="280" fill="url(#compBgGlow)" />
+
+  <!-- Sheet Drop Shadow Base (pure vector, no filter required) -->
+  <rect x="75" y="65" width="450" height="480" rx="14" fill="#000000" opacity="0.6" />
+  <rect x="72" y="62" width="456" height="486" rx="15" fill="#000000" opacity="0.35" />
+
+  <!-- Main Carrier Sheet Card -->
+  <rect x="70" y="55" width="460" height="490" rx="12" fill="#0a101f" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Header Banner -->
+  <rect x="70" y="55" width="460" height="56" rx="12" fill="url(#headerGrad)" />
+  <rect x="70" y="99" width="460" height="12" fill="#1e3a8a" />
+  
+  <text x="100" y="90" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="0.08em">mag² PRO TOURNAMENT VINYL</text>
+  <rect x="420" y="71" width="90" height="24" rx="4" fill="#0a101f" />
+  <text x="465" y="87" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#60a5fa" text-anchor="middle" letter-spacing="0.1em">WCA SPEC</text>
+
+  <!-- ================= 6 FACE SHEETS (3 COLUMNS x 2 ROWS) ================= -->
+
+  <!-- 1. PURE WHITE FACE (Row 1, Col 1) -->
+  <g transform="translate(100, 135)">
+    <rect x="0" y="0" width="114" height="114" rx="6" fill="#060a14" stroke="#334155" stroke-width="1.5" />
+    <text x="57" y="-8" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#cbd5e1" text-anchor="middle">WHITE (U)</text>
+    <!-- 9 Stickers -->
+    <rect x="7" y="7" width="30" height="30" rx="4" fill="#ffffff" /><rect x="7" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="7" width="30" height="30" rx="4" fill="#ffffff" /><rect x="42" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="7" width="30" height="30" rx="4" fill="#ffffff" /><rect x="77" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="42" width="30" height="30" rx="4" fill="#ffffff" /><rect x="7" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="42" width="30" height="30" rx="4" fill="#ffffff" /><rect x="42" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="42" width="30" height="30" rx="4" fill="#ffffff" /><rect x="77" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="77" width="30" height="30" rx="4" fill="#ffffff" /><rect x="7" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="77" width="30" height="30" rx="4" fill="#ffffff" /><rect x="42" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="77" width="30" height="30" rx="4" fill="#ffffff" /><rect x="77" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+  </g>
+
+  <!-- 2. FLUO YELLOW FACE (Row 1, Col 2) -->
+  <g transform="translate(243, 135)">
+    <rect x="0" y="0" width="114" height="114" rx="6" fill="#060a14" stroke="#334155" stroke-width="1.5" />
+    <text x="57" y="-8" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#facc15" text-anchor="middle">YELLOW (D)</text>
+    <!-- 9 Stickers -->
+    <rect x="7" y="7" width="30" height="30" rx="4" fill="#facc15" /><rect x="7" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="7" width="30" height="30" rx="4" fill="#facc15" /><rect x="42" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="7" width="30" height="30" rx="4" fill="#facc15" /><rect x="77" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="42" width="30" height="30" rx="4" fill="#facc15" /><rect x="7" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="42" width="30" height="30" rx="4" fill="#facc15" /><rect x="42" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="42" width="30" height="30" rx="4" fill="#facc15" /><rect x="77" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="77" width="30" height="30" rx="4" fill="#facc15" /><rect x="7" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="77" width="30" height="30" rx="4" fill="#facc15" /><rect x="42" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="77" width="30" height="30" rx="4" fill="#facc15" /><rect x="77" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+  </g>
+
+  <!-- 3. CRIMSON RED FACE (Row 1, Col 3) -->
+  <g transform="translate(386, 135)">
+    <rect x="0" y="0" width="114" height="114" rx="6" fill="#060a14" stroke="#334155" stroke-width="1.5" />
+    <text x="57" y="-8" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#ef4444" text-anchor="middle">RED (R)</text>
+    <!-- 9 Stickers -->
+    <rect x="7" y="7" width="30" height="30" rx="4" fill="#dc2626" /><rect x="7" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="7" width="30" height="30" rx="4" fill="#dc2626" /><rect x="42" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="7" width="30" height="30" rx="4" fill="#dc2626" /><rect x="77" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="42" width="30" height="30" rx="4" fill="#dc2626" /><rect x="7" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="42" width="30" height="30" rx="4" fill="#dc2626" /><rect x="42" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="42" width="30" height="30" rx="4" fill="#dc2626" /><rect x="77" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="77" width="30" height="30" rx="4" fill="#dc2626" /><rect x="7" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="77" width="30" height="30" rx="4" fill="#dc2626" /><rect x="42" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="77" width="30" height="30" rx="4" fill="#dc2626" /><rect x="77" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+  </g>
+
+  <!-- 4. FLUO ORANGE FACE (Row 2, Col 1) -->
+  <g transform="translate(100, 290)">
+    <rect x="0" y="0" width="114" height="114" rx="6" fill="#060a14" stroke="#334155" stroke-width="1.5" />
+    <text x="57" y="-8" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#f97316" text-anchor="middle">ORANGE (L)</text>
+    <!-- 9 Stickers -->
+    <rect x="7" y="7" width="30" height="30" rx="4" fill="#ea580c" /><rect x="7" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="7" width="30" height="30" rx="4" fill="#ea580c" /><rect x="42" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="7" width="30" height="30" rx="4" fill="#ea580c" /><rect x="77" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="42" width="30" height="30" rx="4" fill="#ea580c" /><rect x="7" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="42" width="30" height="30" rx="4" fill="#ea580c" /><rect x="42" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="42" width="30" height="30" rx="4" fill="#ea580c" /><rect x="77" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="77" width="30" height="30" rx="4" fill="#ea580c" /><rect x="7" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="77" width="30" height="30" rx="4" fill="#ea580c" /><rect x="42" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="77" width="30" height="30" rx="4" fill="#ea580c" /><rect x="77" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+  </g>
+
+  <!-- 5. ROYAL BLUE FACE (Row 2, Col 2) -->
+  <g transform="translate(243, 290)">
+    <rect x="0" y="0" width="114" height="114" rx="6" fill="#060a14" stroke="#334155" stroke-width="1.5" />
+    <text x="57" y="-8" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#60a5fa" text-anchor="middle">BLUE (B)</text>
+    <!-- 9 Stickers -->
+    <rect x="7" y="7" width="30" height="30" rx="4" fill="#2563eb" /><rect x="7" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="7" width="30" height="30" rx="4" fill="#2563eb" /><rect x="42" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="7" width="30" height="30" rx="4" fill="#2563eb" /><rect x="77" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="42" width="30" height="30" rx="4" fill="#2563eb" /><rect x="7" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="42" width="30" height="30" rx="4" fill="#2563eb" /><rect x="42" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="42" width="30" height="30" rx="4" fill="#2563eb" /><rect x="77" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="77" width="30" height="30" rx="4" fill="#2563eb" /><rect x="7" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="77" width="30" height="30" rx="4" fill="#2563eb" /><rect x="42" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="77" width="30" height="30" rx="4" fill="#2563eb" /><rect x="77" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+  </g>
+
+  <!-- 6. EMERALD GREEN FACE (Row 2, Col 3) -->
+  <g transform="translate(386, 290)">
+    <rect x="0" y="0" width="114" height="114" rx="6" fill="#060a14" stroke="#334155" stroke-width="1.5" />
+    <text x="57" y="-8" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#4ade80" text-anchor="middle">GREEN (F)</text>
+    <!-- 9 Stickers -->
+    <rect x="7" y="7" width="30" height="30" rx="4" fill="#16a34a" /><rect x="7" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="7" width="30" height="30" rx="4" fill="#16a34a" /><rect x="42" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="7" width="30" height="30" rx="4" fill="#16a34a" /><rect x="77" y="7" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="42" width="30" height="30" rx="4" fill="#16a34a" /><rect x="7" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="42" width="30" height="30" rx="4" fill="#16a34a" /><rect x="42" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="42" width="30" height="30" rx="4" fill="#16a34a" /><rect x="77" y="42" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+
+    <rect x="7" y="77" width="30" height="30" rx="4" fill="#16a34a" /><rect x="7" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="42" y="77" width="30" height="30" rx="4" fill="#16a34a" /><rect x="42" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+    <rect x="77" y="77" width="30" height="30" rx="4" fill="#16a34a" /><rect x="77" y="77" width="30" height="30" rx="4" fill="url(#stickerGloss)" />
+  </g>
+
+  <!-- Sheet Footer Specifications -->
+  <rect x="90" y="440" width="420" height="75" rx="8" fill="#060913" stroke="#1e293b" stroke-width="1" />
+  <text x="300" y="468" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#cbd5e1" text-anchor="middle" letter-spacing="0.08em">54 PRECISION-CUT FACES • 0.12mm ULTRA-LOW PROFILE</text>
+  <text x="300" y="495" font-family="ui-monospace, monospace" font-size="10" fill="#60a5fa" text-anchor="middle" letter-spacing="0.06em">CALIBRATED RADII FOR mag² BEVELED MAGNESIUM PIECES</text>
+</svg>

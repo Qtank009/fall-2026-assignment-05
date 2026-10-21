@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="lubeBlueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#1d4ed8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bottleBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="25%" stop-color="#334155" />
+      <stop offset="60%" stop-color="#475569" />
+      <stop offset="85%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <filter id="lubeDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+  </defs>
+
+  <circle cx="300" cy="300" r="260" fill="url(#lubeBlueGlow)" />
+  <ellipse cx="300" cy="495" rx="140" ry="24" fill="#000000" opacity="0.75" />
+
+  <g filter="url(#lubeDropShadow)">
+    <!-- Dropper Pipette Tip -->
+    <path d="M 292,80 L 308,80 L 304,130 L 296,130 Z" fill="#94a3b8" />
+    <!-- Rubber Dropper Bulb -->
+    <path d="M 285,130 Q 300,105 315,130 L 315,155 L 285,155 Z" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <!-- Blue Precision Thread Cap -->
+    <rect x="270" y="155" width="60" height="35" rx="3" fill="url(#blueAccent)" stroke="#60a5fa" stroke-width="1" />
+    <!-- Cap Ridges -->
+    <line x1="280" y1="155" x2="280" y2="190" stroke="#1d4ed8" stroke-width="1.5" />
+    <line x1="290" y1="155" x2="290" y2="190" stroke="#1d4ed8" stroke-width="1.5" />
+    <line x1="300" y1="155" x2="300" y2="190" stroke="#1d4ed8" stroke-width="1.5" />
+    <line x1="310" y1="155" x2="310" y2="190" stroke="#1d4ed8" stroke-width="1.5" />
+    <line x1="320" y1="155" x2="320" y2="190" stroke="#1d4ed8" stroke-width="1.5" />
+
+    <!-- Bottle Neck -->
+    <rect x="278" y="190" width="44" height="20" fill="#334155" />
+
+    <!-- Bottle Glass / Polymer Body -->
+    <path d="M 240,240 Q 240,210 278,210 L 322,210 Q 360,210 360,240 L 360,450 Q 360,470 340,470 L 260,470 Q 240,470 240,450 Z" fill="url(#bottleBody)" stroke="#475569" stroke-width="1.5" />
+
+    <!-- Bottle Specular Reflection Highlight -->
+    <path d="M 252,245 L 258,245 L 258,455 L 252,455 Z" fill="#ffffff" opacity="0.25" />
+
+    <!-- Metallic Label -->
+    <rect x="246" y="270" width="108" height="150" rx="3" fill="#090f1d" stroke="#3b82f6" stroke-width="1.5" />
+    <!-- Label Header -->
+    <rect x="246" y="270" width="108" height="24" rx="2" fill="#1e3a8a" />
+    <text x="300" y="286" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">mag² CORE</text>
+    
+    <!-- Droplet Graphic -->
+    <path d="M 300,305 C 290,320 286,330 286,338 C 286,346 292,352 300,352 C 308,352 314,346 314,338 C 314,330 310,320 300,305 Z" fill="#3b82f6" />
+    
+    <text x="300" y="375" font-family="monospace" font-size="8.5" font-weight="700" fill="#cbd5e1" text-anchor="middle">SILICONE HV</text>
+    <text x="300" y="390" font-family="monospace" font-size="7.5" fill="#60a5fa" text-anchor="middle">1000 cSt &bull; 10ml</text>
+    <text x="300" y="408" font-family="monospace" font-size="6.5" fill="#94a3b8" text-anchor="middle">SPRING NOISE REDUCTION</text>
+  </g>
+</svg>

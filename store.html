@@ -1,1 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mag² | Configure Your Flagship</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <!-- Persistent Navigation Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="./index.html" class="brand-logo" aria-label="mag² Home">
+          <span>mag<sup>2</sup></span>
+          <span class="brand-badge">Flagship</span>
+        </a>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./about.html" class="nav-link">About</a></li>
+            <li><a href="./store.html" class="nav-link active">Store</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <!-- Store Configurator Hero / Header -->
+      <section class="hero-section hero-configurator">
+        <div class="container text-center">
+          <div class="section-label">Single Product Atelier</div>
+          <h1 class="hero-title">
+            Configure Your <span class="gradient-text">mag² Flagship</span>
+          </h1>
+          <p class="hero-subtitle" style="margin-left: auto; margin-right: auto;">
+            Precision-tailor your additive magnesium 3×3 speedcube. Choose your required exterior
+            coating, optional fitted sticker sets, and bespoke atelier hardware.
+          </p>
+        </div>
+      </section>
+
+      <!-- Store Configurator Interactive Section -->
+      <section class="configurator-section scroll-slide-section">
+        <div class="container">
+          <div class="configurator-layout">
+            <!-- Left Column: Visual Showcase & Standard Image Carousel -->
+            <div class="configurator-media">
+              <div class="carousel-container" id="cube-carousel" aria-label="Product Image Carousel">
+                <div class="carousel-viewport">
+                  <!-- Previous Slide Button -->
+                  <button
+                    type="button"
+                    id="carousel-prev"
+                    class="carousel-nav-btn prev"
+                    aria-label="Previous Slide"
+                  >
+                    &#8592;
+                  </button>
+
+                  <!-- Active Image Frame -->
+                  <div class="carousel-image-frame">
+                    <img
+                      id="main-product-image"
+                      src="./images/mag2-flagship.svg"
+                      alt="mag² Flagship Mono Silver"
+                      class="carousel-active-img"
+                      width="440"
+                      height="440"
+                    />
+                    <div class="carousel-caption-badge" id="carousel-caption">
+                      Mono Silver Finish (Raw WE43 Magnesium)
+                    </div>
+                  </div>
+
+                  <!-- Next Slide Button -->
+                  <button
+                    type="button"
+                    id="carousel-next"
+                    class="carousel-nav-btn next"
+                    aria-label="Next Slide"
+                  >
+                    &#8594;
+                  </button>
+                </div>
+
+                <!-- Carousel Slide Indicator Counter -->
+                <div class="carousel-meta">
+                  <span class="carousel-counter" id="carousel-counter">1 / 8</span>
+                  <span class="carousel-hint">Browse all finish &amp; accessory previews</span>
+                </div>
+
+                <!-- Carousel Thumbnails Rail -->
+                <div
+                  class="carousel-thumbnails"
+                  id="carousel-thumbnails"
+                  role="tablist"
+                  aria-label="Image Thumbnails"
+                >
+                  <!-- Injected dynamically by src/main.js -->
+                </div>
+              </div>
+
+              <!-- Product Specifications Callout -->
+              <div class="product-specs-box">
+                <div class="specs-box-header">
+                  <span class="specs-title">Flagship Standard Specifications</span>
+                  <span class="spec-wca-tag">WCA Competition Legal</span>
+                </div>
+                <div class="specs-box-grid">
+                  <div class="spec-item">
+                    <span class="spec-label">Dimensions</span>
+                    <span class="spec-value">55.5 mm &times; 55.5 mm &times; 55.5 mm</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Assembled Weight</span>
+                    <span class="spec-value">~82 grams (Metal Density: 1.74 g/cm³)</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Magnetic Core</span>
+                    <span class="spec-value">48 Embedded N52 Neodymium Capsules</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Base Metallurgy</span>
+                    <span class="spec-value">Laser Powder Bed Fused WE43 Magnesium</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Product Configuration & Options Form -->
+            <div class="configurator-details">
+              <div class="product-heading-area">
+                <div class="product-badge-pill">Additive Precision Puzzles</div>
+                <h2 class="configurator-product-title">mag² Flagship 3×3 Speedcube</h2>
+                <p class="configurator-product-desc">
+                  Monolithic raw silver or anodized finish, precision-balanced to competition mass,
+                  and engineered without disposable plastic shells.
+                </p>
+              </div>
+
+              <form id="configurator-form" class="options-form" novalidate>
+                <!-- OPTION 1: Coating (REQUIRED CHOICE) -->
+                <fieldset class="option-fieldset">
+                  <legend class="option-legend">
+                    <span class="legend-number">1</span>
+                    <span class="legend-name">Exterior Coating</span>
+                    <span class="legend-status required">Required Choice</span>
+                  </legend>
+                  <p class="option-hint">
+                    Choose your cube finish. Selecting a coating immediately updates the active cube image above.
+                  </p>
+
+                  <div class="coating-cards-grid" id="coating-cards-container">
+                    <!-- Option 1: Mono Silver -->
+                    <label class="coating-card active" data-coating-id="mono-silver">
+                      <input
+                        type="radio"
+                        name="coating"
+                        value="mono-silver"
+                        checked
+                        required
+                      />
+                      <div class="card-radio-dot"></div>
+                      <div class="coating-card-body">
+                        <div class="card-title-row">
+                          <span class="card-title">Raw Mono Silver</span>
+                          <span class="card-price-tag">Included</span>
+                        </div>
+                        <p class="card-caption">
+                          Natural laser-sintered WE43 magnesium. Raw metallic aerospace micro-texture.
+                        </p>
+                      </div>
+                    </label>
+
+                    <!-- Option 2: Anodized Cobalt -->
+                    <label class="coating-card" data-coating-id="anodized-cobalt">
+                      <input
+                        type="radio"
+                        name="coating"
+                        value="anodized-cobalt"
+                        required
+                      />
+                      <div class="card-radio-dot"></div>
+                      <div class="coating-card-body">
+                        <div class="card-title-row">
+                          <span class="card-title">Anodized Cobalt Slate</span>
+                          <span class="card-price-tag">+$20.00</span>
+                        </div>
+                        <p class="card-caption">
+                          Electrolytic deep blue passivation layer with hardened surface wear protection.
+                        </p>
+                      </div>
+                    </label>
+
+                    <!-- Option 3: Ceramic UV Gloss -->
+                    <label class="coating-card" data-coating-id="ceramic-uv">
+                      <input
+                        type="radio"
+                        name="coating"
+                        value="ceramic-uv"
+                        required
+                      />
+                      <div class="card-radio-dot"></div>
+                      <div class="coating-card-body">
+                        <div class="card-title-row">
+                          <span class="card-title">Ceramic UV Gloss</span>
+                          <span class="card-price-tag">+$30.00</span>
+                        </div>
+                        <p class="card-caption">
+                          High-durability optical ceramic clearcoat delivering maximum fingertip grip.
+                        </p>
+                      </div>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <!-- OPTION 2: Fitted Stickers (NOT REQUIRED) -->
+                <fieldset class="option-fieldset">
+                  <legend class="option-legend">
+                    <span class="legend-number">2</span>
+                    <span class="legend-name">Fitted Face Sticker Set</span>
+                    <span class="legend-status optional">Optional</span>
+                  </legend>
+                  <p class="option-hint">
+                    Add precision-cut tournament stickers. Selecting stickers does not alter the main cube image.
+                  </p>
+
+                  <div class="select-container">
+                    <select id="stickers-select" name="stickers" class="configurator-select">
+                      <option value="none" data-price="0">
+                        None — Raw Metallic Faces ($0.00)
+                      </option>
+                      <option value="competition-pro" data-price="14.99">
+                        Competition Pro Vinyl Set (+$14.99)
+                      </option>
+                      <option value="carbon-weave" data-price="18.99">
+                        Carbon Weave Textured Set (+$18.99)
+                      </option>
+                      <option value="night-glow" data-price="16.99">
+                        Luminescent Night Glow Set (+$16.99)
+                      </option>
+                    </select>
+                  </div>
+                </fieldset>
+
+                <!-- OPTION 3 & 4: Spring Pack & Stand (OPTIONAL ADD-ONS) -->
+                <fieldset class="option-fieldset">
+                  <legend class="option-legend">
+                    <span class="legend-number">3</span>
+                    <span class="legend-name">Atelier Hardware &amp; Accessories</span>
+                    <span class="legend-status optional">Optional Add-ons</span>
+                  </legend>
+                  <p class="option-hint">
+                    Select additional tuning hardware or display stands to complement your cube.
+                  </p>
+
+                  <div class="addons-list">
+                    <!-- Option to include spring pack -->
+                    <label class="addon-card" id="card-spring-pack">
+                      <input
+                        type="checkbox"
+                        id="addon-spring-pack"
+                        name="addon-spring-pack"
+                        data-price="19.99"
+                      />
+                      <div class="card-check-box"></div>
+                      <div class="addon-card-body">
+                        <div class="card-title-row">
+                          <span class="card-title">Calibrated Tension Spring Pack</span>
+                          <span class="card-price-tag">+$19.99</span>
+                        </div>
+                        <p class="card-caption">
+                          12 stainless steel compression springs (Soft 0.6N, Mid 0.8N, Firm 1.0N) plus 6 CNC step washers.
+                        </p>
+                      </div>
+                    </label>
+
+                    <!-- Option to include stand -->
+                    <label class="addon-card" id="card-billet-stand">
+                      <input
+                        type="checkbox"
+                        id="addon-billet-stand"
+                        name="addon-billet-stand"
+                        data-price="29.99"
+                      />
+                      <div class="card-check-box"></div>
+                      <div class="addon-card-body">
+                        <div class="card-title-row">
+                          <span class="card-title">CNC Billet Aluminum Display Stand</span>
+                          <span class="card-price-tag">+$29.99</span>
+                        </div>
+                        <p class="card-caption">
+                          Monolithic machined aluminum pedestal with triangular cradle and laser-engraved mag² atelier insignia.
+                        </p>
+                      </div>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <!-- Configuration Summary Box & Dynamic Price Display -->
+                <div class="config-summary-box">
+                  <div class="summary-top">
+                    <div>
+                      <span class="summary-eyebrow">Calculated Configuration</span>
+                      <div class="summary-price-wrap">
+                        <span class="price-dollar">$</span>
+                        <span id="total-price" class="total-amount">149.99</span>
+                        <span class="price-currency">USD</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="price-breakdown" class="price-breakdown">
+                    Base Cube: $149.99 (Raw Mono Silver)
+                  </div>
+
+                  <button
+                    type="submit"
+                    id="configure-btn"
+                    class="btn btn-primary btn-large btn-block"
+                  >
+                    Reserve Configured Edition
+                  </button>
+
+                  <div class="summary-guarantee-note">
+                    Laser-sintered on demand &bull; Hand-tensioned &bull; Insured worldwide delivery
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Persistent Shared Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-col">
+          <h3 class="footer-heading">mag<sup>2</sup></h3>
+          <p class="footer-desc">
+            Additive precision mechanical puzzles. Pushing the frontier of speedcubing through
+            aerospace metallurgy.
+          </p>
+          <p class="footer-copy">&copy; 2026 mag<sup>2</sup> Inc. All rights reserved.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-subheading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./store.html">Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-subheading">Atelier & Support</h4>
+          <ul class="footer-hours">
+            <li>Monday – Friday: 9:00 AM – 6:00 PM EST</li>
+            <li>Saturday: 10:00 AM – 4:00 PM EST</li>
+            <li>Sunday: Closed (Manufacturing Run)</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript Module -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

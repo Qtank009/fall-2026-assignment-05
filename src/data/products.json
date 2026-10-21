@@ -1,1 +1,130 @@
-[]
+{
+  "id": "mag2-flagship",
+  "name": "mag² Flagship 3×3 Speedcube",
+  "basePrice": 149.99,
+  "category": "Speedcubes",
+  "description": "The world’s first additive-manufactured magnesium 3×3 speedcube with 48 embedded neodymium magnets, aerospace LPBF sintering, and standard tournament 55.5mm form.",
+  "defaultImage": "./images/mag2-flagship.svg",
+  "coatings": [
+    {
+      "id": "mono-silver",
+      "name": "Raw Mono Silver",
+      "price": 149.99,
+      "priceDiff": 0,
+      "imageUrl": "./images/mag2-flagship.svg",
+      "description": "Standard laser-sintered WE43 magnesium with raw metallic micro-texture."
+    },
+    {
+      "id": "anodized-cobalt",
+      "name": "Anodized Cobalt Slate",
+      "price": 169.99,
+      "priceDiff": 20.0,
+      "imageUrl": "./images/cube-cobalt.svg",
+      "description": "Electrolytic deep blue anodization for hardened wear protection."
+    },
+    {
+      "id": "ceramic-uv",
+      "name": "Ceramic UV Gloss",
+      "price": 179.99,
+      "priceDiff": 30.0,
+      "imageUrl": "./images/cube-ceramic-uv.svg",
+      "description": "High-durability optical ceramic clearcoat with maximum fingertip grip."
+    }
+  ],
+  "stickers": [
+    {
+      "id": "none",
+      "name": "None — Raw Metallic Faces",
+      "price": 0,
+      "imageUrl": "./images/mag2-flagship.svg",
+      "description": "Enjoy the pure monolithic metal surface."
+    },
+    {
+      "id": "competition-pro",
+      "name": "Competition Pro Vinyl Set",
+      "price": 14.99,
+      "imageUrl": "./images/stickers-competition.svg",
+      "description": "0.12mm tournament-spec ultra-thin vinyl."
+    },
+    {
+      "id": "carbon-weave",
+      "name": "Carbon Weave Textured Set",
+      "price": 18.99,
+      "imageUrl": "./images/stickers-carbon.svg",
+      "description": "Embossed 3D carbon pattern with colored borders."
+    },
+    {
+      "id": "night-glow",
+      "name": "Luminescent Night Glow Set",
+      "price": 16.99,
+      "imageUrl": "./images/stickers-glow.svg",
+      "description": "Strontium aluminate phosphorescent glow for zero-light solves."
+    }
+  ],
+  "addons": [
+    {
+      "id": "spring-pack",
+      "name": "Calibrated Tension Spring Pack",
+      "price": 19.99,
+      "imageUrl": "./images/springs-tension.svg",
+      "description": "12 stainless steel compression springs across 3 stiffness ratings plus 6 CNC step washers."
+    },
+    {
+      "id": "billet-stand",
+      "name": "CNC Billet Aluminum Display Stand",
+      "price": 29.99,
+      "imageUrl": "./images/stand-billet.svg",
+      "description": "Machined aluminum pedestal with triangular cradle and laser-etched mag² atelier insignia."
+    }
+  ],
+  "carouselSlides": [
+    {
+      "id": "slide-mono",
+      "title": "Raw Mono Silver Coating",
+      "caption": "Mono Silver Finish (Raw WE43 Magnesium)",
+      "imageUrl": "./images/mag2-flagship.svg"
+    },
+    {
+      "id": "slide-cobalt",
+      "title": "Anodized Cobalt Slate Coating",
+      "caption": "Anodized Cobalt Slate Finish",
+      "imageUrl": "./images/cube-cobalt.svg"
+    },
+    {
+      "id": "slide-uv",
+      "title": "Ceramic UV Gloss Coating",
+      "caption": "Ceramic UV Gloss Coating",
+      "imageUrl": "./images/cube-ceramic-uv.svg"
+    },
+    {
+      "id": "slide-stickers-comp",
+      "title": "Competition Pro Sticker Set",
+      "caption": "Competition Pro Vinyl Sticker Set (6 Faces)",
+      "imageUrl": "./images/stickers-competition.svg"
+    },
+    {
+      "id": "slide-stickers-carbon",
+      "title": "Carbon Weave Sticker Set",
+      "caption": "Carbon Weave Textured Sticker Set",
+      "imageUrl": "./images/stickers-carbon.svg"
+    },
+    {
+      "id": "slide-stickers-glow",
+      "title": "Luminescent Night Glow Sticker Set",
+      "caption": "Luminescent Night Glow Sticker Set",
+      "imageUrl": "./images/stickers-glow.svg"
+    },
+    {
+      "id": "slide-springs",
+      "title": "Calibrated Tension Spring Pack",
+      "caption": "Calibrated Tension Spring Pack (12 Springs + Washers)",
+      "imageUrl": "./images/springs-tension.svg"
+    },
+    {
+      "id": "slide-stand",
+      "title": "CNC Billet Aluminum Stand",
+      "caption": "CNC Billet Aluminum Display Stand",
+      "imageUrl": "./images/stand-billet.svg"
+    }
+  ]
+}

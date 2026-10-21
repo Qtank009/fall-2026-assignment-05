@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="carbonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#0f172a" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="carbonWeave" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#18181b" />
+      <polygon points="0,0 3,0 0,3" fill="#27272a" />
+      <polygon points="3,3 6,3 3,6" fill="#27272a" />
+      <polygon points="3,0 6,0 6,3" fill="#3f3f46" />
+      <polygon points="0,3 3,3 0,6" fill="#3f3f46" />
+    </pattern>
+    <filter id="carbonShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+  </defs>
+
+  <circle cx="300" cy="300" r="260" fill="url(#carbonGlow)" />
+
+  <g filter="url(#carbonShadow)">
+    <rect x="110" y="80" width="380" height="440" rx="12" fill="#090d16" stroke="#334155" stroke-width="2" />
+    <rect x="110" y="80" width="380" height="50" rx="12" fill="#111827" />
+    <text x="140" y="112" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" letter-spacing="0.08em">CARBON WEAVE STICKER SET</text>
+    <text x="440" y="112" font-family="monospace" font-size="11" fill="#94a3b8" text-anchor="end">3D TEXTURED</text>
+
+    <!-- 6 Face Groups of Carbon Weave with coloured border accents -->
+    <!-- White border -->
+    <g transform="translate(140, 160)">
+      <rect x="0" y="0" width="95" height="95" rx="4" fill="#040711" stroke="#ffffff" stroke-width="1.5" />
+      <rect x="5" y="5" width="85" height="85" rx="2" fill="url(#carbonWeave)" />
+      <g stroke="#ffffff" stroke-width="1" opacity="0.6">
+        <line x1="33" y1="5" x2="33" y2="90" /><line x1="62" y1="5" x2="62" y2="90" />
+        <line x1="5" y1="33" x2="90" y2="33" /><line x1="5" y1="62" x2="90" y2="62" />
+      </g>
+    </g>
+
+    <!-- Yellow border -->
+    <g transform="translate(252, 160)">
+      <rect x="0" y="0" width="95" height="95" rx="4" fill="#040711" stroke="#facc15" stroke-width="1.5" />
+      <rect x="5" y="5" width="85" height="85" rx="2" fill="url(#carbonWeave)" />
+      <g stroke="#facc15" stroke-width="1" opacity="0.6">
+        <line x1="33" y1="5" x2="33" y2="90" /><line x1="62" y1="5" x2="62" y2="90" />
+        <line x1="5" y1="33" x2="90" y2="33" /><line x1="5" y1="62" x2="90" y2="62" />
+      </g>
+    </g>
+
+    <!-- Red border -->
+    <g transform="translate(365, 160)">
+      <rect x="0" y="0" width="95" height="95" rx="4" fill="#040711" stroke="#ef4444" stroke-width="1.5" />
+      <rect x="5" y="5" width="85" height="85" rx="2" fill="url(#carbonWeave)" />
+      <g stroke="#ef4444" stroke-width="1" opacity="0.6">
+        <line x1="33" y1="5" x2="33" y2="90" /><line x1="62" y1="5" x2="62" y2="90" />
+        <line x1="5" y1="33" x2="90" y2="33" /><line x1="5" y1="62" x2="90" y2="62" />
+      </g>
+    </g>
+
+    <!-- Orange border -->
+    <g transform="translate(140, 280)">
+      <rect x="0" y="0" width="95" height="95" rx="4" fill="#040711" stroke="#f97316" stroke-width="1.5" />
+      <rect x="5" y="5" width="85" height="85" rx="2" fill="url(#carbonWeave)" />
+      <g stroke="#f97316" stroke-width="1" opacity="0.6">
+        <line x1="33" y1="5" x2="33" y2="90" /><line x1="62" y1="5" x2="62" y2="90" />
+        <line x1="5" y1="33" x2="90" y2="33" /><line x1="5" y1="62" x2="90" y2="62" />
+      </g>
+    </g>
+
+    <!-- Blue border -->
+    <g transform="translate(252, 280)">
+      <rect x="0" y="0" width="95" height="95" rx="4" fill="#040711" stroke="#3b82f6" stroke-width="1.5" />
+      <rect x="5" y="5" width="85" height="85" rx="2" fill="url(#carbonWeave)" />
+      <g stroke="#3b82f6" stroke-width="1" opacity="0.6">
+        <line x1="33" y1="5" x2="33" y2="90" /><line x1="62" y1="5" x2="62" y2="90" />
+        <line x1="5" y1="33" x2="90" y2="33" /><line x1="5" y1="62" x2="90" y2="62" />
+      </g>
+    </g>
+
+    <!-- Green border -->
+    <g transform="translate(365, 280)">
+      <rect x="0" y="0" width="95" height="95" rx="4" fill="#040711" stroke="#22c55e" stroke-width="1.5" />
+      <rect x="5" y="5" width="85" height="85" rx="2" fill="url(#carbonWeave)" />
+      <g stroke="#22c55e" stroke-width="1" opacity="0.6">
+        <line x1="33" y1="5" x2="33" y2="90" /><line x1="62" y1="5" x2="62" y2="90" />
+        <line x1="5" y1="33" x2="90" y2="33" /><line x1="5" y1="62" x2="90" y2="62" />
+      </g>
+    </g>
+
+    <text x="300" y="445" font-family="monospace" font-size="11" fill="#cbd5e1" text-anchor="middle">REAL EMBOSSED CARBON FIBER TEXTURE</text>
+    <text x="300" y="475" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">HIGH-TACTILE GRIP FOR MAGNESIUM FACES</text>
+  </g>
+</svg>
